@@ -1,0 +1,30 @@
+<!-- code slide (embedded) -->
+<div class="deitel" id="prog0391482">
+<style>
+#prog0391482 {
+  font-size: 16pt; font-weight: bold; font-weight: bold;
+}
+</style>
+<pre style="background-color:#F5FADC">
+<code>
+   printf("Entering while loop\n");
+   while ( grade != -1 ) {
+      printf("start while, grade=%d\n", grade);
+      total = total + grade;
+      counter = counter + 1;
+      printf("total=%d, count=%d\n", total, count);
+      /* get next grade from user */
+      printf( "Enter grade, -1 to end: " );
+      scanf("%d", &grade);
+   } /* end while */
+   printf("Exit while loop\n");
+
+</code>
+</pre>
+<script src="zoom.js"></script>
+<script>
+document.querySelector( '#prog0391482').addEventListener( 'click', function( event ) {
+event.preventDefault();zoom.to({ element: event.target });} );
+</script> 
+</div>
+<!-- end code slide -->

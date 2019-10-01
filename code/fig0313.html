@@ -1,0 +1,43 @@
+<!-- code slide (embedded) -->
+<div class="deitel" id="prog0313">
+<style>
+#prog0313 {
+  font-size: 16pt; font-weight: bold; font-weight: bold;
+}
+</style>
+<pre style="background-color:#F5FADC">
+<code>
+/* Fig. 3.13: fig03_13.c
+   Preincrementing and postincrementing */
+#include &lt;stdio.h&gt;
+
+/* function main begins program execution */
+int main( void )
+{
+   int c;              /* define variable */
+   
+   /* demonstrate postincrement */
+   c = 5;              /* assign 5 to c */
+   printf( "%d\n", c );   /* print 5 */
+   <mark>printf( "%d\n", c++ );</mark> /* print 5 then postincrement */
+   printf( "%d\n\n", c ); /* print 6 */
+   
+   /* demonstrate preincrement */
+   c = 5;              /* assign 5 to c */
+   printf( "%d\n", c );   /* print 5 */
+   <mark>printf( "%d\n", ++c );</mark> /* preincrement then print 6 */
+   printf( "%d\n", c );   /* print 6 */
+
+   return 0; /* indicate program ended successfully */
+
+} /* end function main */
+
+</code>
+</pre>
+<script src="zoom.js"></script>
+<script>
+document.querySelector( '#prog0313').addEventListener( 'click', function( event ) {
+event.preventDefault();zoom.to({ element: event.target });} );
+</script> 
+</div>
+<!-- end code slide -->

@@ -1,0 +1,49 @@
+<!-- Slide 307 -->
+        <div class="slide" id="slide307">
+   <header>
+      <h1>Efficient code</h1>
+   </header>             
+             <style>
+              #slide307 pre{font-size: 16pt; background:none; border:0px;}
+             </style>
+<section>
+ <pre>
+ <code>
+  /* bubble sort */
+  /* loop to control number of passes */
+  for ( pass = 1; pass &lt; SIZE; pass++ ) {
+     <mark>changed = 0;</mark>
+     /* loop to control number of comparisons per pass */
+     for ( i = 0; <mark>i &lt; SIZE - pass;</mark> i++ ) {
+        /* compare adjacent elements and swap them if first
+           element is greater than second element */
+
+        if ( a[ i ] &gt; a[ i + 1 ] ) {
+           hold = a[ i ];
+           a[ i ] = a[ i + 1 ];
+           a[ i + 1 ] = hold;
+           <mark>changed = 1;</mark>
+        } /* end if */
+        
+     } /* end inner for */
+     <mark>if (!changed) break;</mark>
+  } /* end outer for */
+          
+</code>
+</pre>
+</section>
+            <aside class="note">
+            <section>
+We use a variable called <mark>changed</mark> which is set to 0 before the start of the inner <mark>for</mark> loop. It is set to 1 if we make
+a change inside the loop. If it is still zero after the loop
+has finished (<mark>!changed</mark>) then nothing has changed, and we can quit. Also, after every pass the last element is in the right position, so
+we can reduce the number of elements per pass by one. This is achieved by using <mark>SIZE-pass</mark> as a terminating condition in the inner loop.
+            </section>
+          </aside> 
+      
+        
+      </div>
+
+<!-- endSlide 307 -->
+
+

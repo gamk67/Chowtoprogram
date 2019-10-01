@@ -1,0 +1,36 @@
+<!-- code slide (embedded) -->
+<div class="deitel" id="prog0401">
+<style>
+#prog0401 {
+  font-size: 16pt; font-weight: bold; font-weight: bold;
+}
+</style>
+<pre style="background-color:#F5FADC">
+<code>
+/* Fig. 4.1: fig04_01.c
+   Counter-controlled repetition */
+#include &lt;stdio.h&gt;
+
+/* function main begins program execution */
+int main( void )
+{
+   <mark>int counter = 1;</mark> /* initialization */
+   
+   while ( counter <= 10 ) { /* repetition condition */
+      printf ( "%d\n", counter ); /* display counter */
+      counter++; /* increment */ 
+   } /* end while */
+
+   return 0; /* indicate program ended successfully */
+
+} /* end function main */
+
+</code>
+</pre>
+<script src="zoom.js"></script>
+<script>
+document.querySelector( '#prog0401').addEventListener( 'click', function( event ) {
+event.preventDefault();zoom.to({ element: event.target });} );
+</script> 
+</div>
+<!-- end code slide -->

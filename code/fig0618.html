@@ -1,0 +1,77 @@
+<!-- code slide (embedded) -->
+<div class="deitel" id="prog0618">
+<style>
+#prog0618 {
+  font-size: 16pt; font-weight: bold; font-weight: bold;
+}
+</style>
+<pre style="background-color:#F5FADC">
+<code>
+/* Fig. 6.18: fig06_18.c
+   Linear search of an array */
+#include &lt;stdio.h&gt;
+#define SIZE 100
+
+/* function prototype */
+<mark>int linearSearch( const int array[], int key, int size );</mark> 
+
+/* function main begins program execution */
+int main( void )
+{   
+   int a[ SIZE ]; /* create array a */
+   int x; /* counter for initializing elements 0-99 of array a */
+   int searchKey; /* value to locate in array a */
+   int element; /* variable to hold location of searchKey or -1 */
+
+   /* create data */
+   for ( x = 0; x < SIZE; x++ ) { 
+      a[ x ] = 2 * x;
+   } /* end for */
+
+   printf( "Enter integer search key:\n" );
+   scanf( "%d", &searchKey );
+
+   /* attempt to locate searchKey in array a */
+   element = linearSearch( a, searchKey, SIZE );
+
+   /* display results */
+   if ( element != -1 ) {
+      printf( "Found value in element %d\n", element );
+   } /* end if */
+   else {
+      printf( "Value not found\n" );
+   } /* end else */
+
+   return 0; /* indicates successful termination */
+
+} /* end main */
+
+/* compare key to every element of array until the location is found
+   or until the end of array is reached; return subscript of element
+   if key or -1 if key is not found */
+<mark>int linearSearch( const int array[], int key, int size )</mark>
+{
+   int n; /* counter */
+
+   /* loop through array */
+   for ( n = 0; n < size; ++n ) {
+
+      if ( array[ n ] == key ) { 
+         return n; /* return location of key */
+      } /* end if */
+
+   } /* end for */
+
+   return -1; /* key not found */
+
+<mark>} /* end function linearSearch */</mark>
+
+</code>
+</pre>
+<script src="zoom.js"></script>
+<script>
+document.querySelector( '#prog0618').addEventListener( 'click', function( event ) {
+event.preventDefault();zoom.to({ element: event.target });} );
+</script> 
+</div>
+<!-- end code slide -->

@@ -1,0 +1,71 @@
+<!-- code slide (embedded) -->
+<div class="deitel" id="prog0615">
+<style>
+#prog0615 {
+  font-size: 16pt; font-weight: bold; font-weight: bold;
+}
+</style>
+<pre style="background-color:#F5FADC">
+<code>
+ /* Fig. 6.15: fig06_15.c
+    This program sorts an array's values into ascending order */
+ #include &lt;stdio.h&gt;
+ #define SIZE 10
+ 
+ /* function main begins program execution */
+ int main( void ) 
+ {   
+    /* initialize a */
+    int a[ SIZE ] = { 2, 6, 4, 8, 10, 12, 89, 68, 45, 37 }; 
+    int pass; /* passes counter */
+    int i;    /* comparisons counter */
+    int hold; /* temporary location used to swap array elements */
+    
+    printf( "Data items in original order\n" );
+    
+    /* output original array */
+    for ( i = 0; i < SIZE; i++ ) {
+       printf( "%4d", a[ i ] );
+    } /* end for */
+
+    <mark>/* bubble sort */</mark>
+    /* loop to control number of passes */
+    <mark>for ( pass = 1; pass < SIZE; pass++ ) {</mark> 
+ 
+       /* loop to control number of comparisons per pass */
+       for ( i = 0; i < SIZE - 1; i++ ) {      
+ 
+          /* compare adjacent elements and swap them if first 
+          element is greater than second element */
+          if ( a[ i ] > a[ i + 1 ] ) {  
+             hold = a[ i ];                   
+             a[ i ] = a[ i + 1 ];
+             a[ i + 1 ] = hold;
+          } /* end if */
+ 
+       } /* end inner for */
+ 
+    <mark>} /* end outer for */</mark>
+ 
+    printf( "\nData items in ascending order\n" );
+ 
+    /* output sorted array */
+    for ( i = 0; i < SIZE; i++ ) {
+       printf( "%4d", a[ i ] );
+    } /* end for */
+ 
+    printf( "\n" );
+ 
+    return 0; /* indicates successful termination */
+ 
+ } /* end main */
+
+</code>
+</pre>
+<script src="zoom.js"></script>
+<script>
+document.querySelector( '#prog0615').addEventListener( 'click', function( event ) {
+event.preventDefault();zoom.to({ element: event.target });} );
+</script> 
+</div>
+<!-- end code slide -->

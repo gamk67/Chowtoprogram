@@ -1,0 +1,68 @@
+<!-- code slide (embedded) -->
+<div class="deitel" id="prog0308">
+<style>
+#prog0308 {
+  font-size: 16pt; font-weight: bold; font-weight: bold;
+}
+</style>
+<pre style="background-color:#F5FADC">
+<code>
+/* Fig. 3.8: fig03_08.c
+   Class average program with sentinel-controlled repetition */
+#include &lt;stdio.h&gt;
+
+/* function main begins program execution */
+int main( void )
+{
+   int counter; /* number of grades entered */
+   int grade;   /* grade value */
+   int total;   /* sum of grades */
+
+   <mark>float average;</mark> /* number with decimal point for average */
+   
+   /* initialization phase */
+   total = 0;   /* initialize total */
+   <mark>counter = 0;</mark> /* initialize loop counter */
+   
+   /* processing phase */
+   /* get first grade from user */
+   printf( "Enter grade, -1 to end: " ); /* prompt for input */
+   scanf( "%d", &grade );                /* read grade from user */
+   
+   /* loop while sentinel value not yet read from user */
+   <mark>while ( grade != -1 ) {</mark>
+      total = total + grade; /* add grade to total */
+      counter = counter + 1; /* increment counter */
+      
+      /* get next grade from user */
+      printf( "Enter grade, -1 to end: " ); /* prompt for input */
+      scanf("%d", &grade);                  /* read next grade */
+   <mark>}</mark> /* end while */
+
+   /* termination phase */
+   /* if user entered at least one grade */
+   <mark>if ( counter != 0 ) {</mark>
+
+      /* calculate average of all grades entered */
+      average = <mark>( float )</mark> total / counter; /* avoid truncation */
+
+      /* display average with two digits of precision */
+      printf( "Class average is %<mark>.2f</mark>\n", average );   
+   <mark>}</mark> /* end if */   
+   else { /* if no grades were entered, output message */
+      printf( "No grades were entered\n" );
+   } /* end else */
+
+   return 0; /* indicate program ended successfully */
+
+} /* end function main */
+
+</code>
+</pre>
+<script src="zoom.js"></script>
+<script>
+document.querySelector( '#prog0308').addEventListener( 'click', function( event ) {
+event.preventDefault();zoom.to({ element: event.target });} );
+</script> 
+</div>
+<!-- end code slide -->

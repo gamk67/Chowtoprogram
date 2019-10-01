@@ -1,0 +1,48 @@
+<!-- code slide (embedded) -->
+<div class="deitel" id="prog0406">
+<style>
+#prog0406 {
+  font-size: 16pt; font-weight: bold; font-weight: bold;
+}
+</style>
+<pre style="background-color:#F5FADC">
+<code>
+/* Fig. 4.6: fig04_06.c
+   Calculating compound interest */
+#include &lt;stdio.h&gt;
+<mark>#include &lt;math.h&gt;</mark>  
+
+/* function main begins program execution */
+int main( void )
+{
+   double amount;             /* amount on deposit */
+   double principal = 1000.0; /* starting principal */
+   double rate = .05;         /* annual interest rate */
+   int year;                  /* year counter */
+
+   /* output table column head */
+   printf( "%4s%21s\n", "Year", "Amount on deposit" );
+
+   /* calculate amount on deposit for each of ten years */
+   for ( year = 1; year <= 10; year++ ) {
+
+      /* calculate new amount for specified year */
+      amount = principal * <mark>pow( 1.0 + rate, year )</mark>;
+
+      /* output one table row */
+      printf( "%4d%21.2f\n", year, amount );   
+   } /* end for */
+
+   return 0; /* indicate program ended successfully */
+
+} /* end function main */
+
+</code>
+</pre>
+<script src="zoom.js"></script>
+<script>
+document.querySelector( '#prog0406').addEventListener( 'click', function( event ) {
+event.preventDefault();zoom.to({ element: event.target });} );
+</script> 
+</div>
+<!-- end code slide -->

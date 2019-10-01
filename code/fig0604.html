@@ -1,0 +1,40 @@
+<!-- code slide (embedded) -->
+<div class="deitel" id="prog0604">
+<style>
+#prog0604 {
+  font-size: 16pt; font-weight: bold; font-weight: bold;
+}
+</style>
+<pre style="background-color:#F5FADC">
+<code>
+/* Fig. 6.4: fig06_04.c
+   Initializing an array with a initializer list */
+#include &lt;stdio.h&gt;
+
+/* function main begins program execution */
+int main( void )
+{
+   /* use initializer list to initialize array n */
+   <mark>int n[ 10 ] = { 32, 27, 64, 18, 95, 14, 90, 70, 60, 37 };</mark>
+   int i; /* counter */
+   
+   printf( "%s%13s\n", "Element", "Value" );
+   
+   /* output contents of array in tabular format */
+   for ( i = 0; i < 10; i++ ) {
+      printf( "%7d%13d\n", i, n[ i ] );
+   } /* end for */
+
+   return 0; /* indicates successful termination */
+
+} /* end main */
+
+</code>
+</pre>
+<script src="zoom.js"></script>
+<script>
+document.querySelector( '#prog0604').addEventListener( 'click', function( event ) {
+event.preventDefault();zoom.to({ element: event.target });} );
+</script> 
+</div>
+<!-- end code slide -->

@@ -1,0 +1,47 @@
+<!-- code slide (embedded) -->
+<div class="deitel" id="prog0503">
+<style>
+#prog0503 {
+  font-size: 16pt; font-weight: bold; font-weight: bold;
+}
+</style>
+<pre style="background-color:#F5FADC">
+<code>
+/* Fig. 5.3: fig05_03.c
+   Creating and using a programmer-defined function */
+#include &lt;stdio.h&gt;
+
+<mark>int square( int y );</mark> /* function prototype */
+
+/* function main begins program execution */
+int main( void )
+{
+   int x; /* counter */
+
+   /* loop 10 times and calculate and output square of x each time */
+   for ( x = 1; x <= 10; x++ ) {
+      printf( "%d  ", <mark>square( x )</mark> ); /* function call */
+   } /* end for */
+
+   printf( "\n" );
+
+   return 0; /* indicates successful termination */
+
+} /* end main */
+
+/* square function definition returns square of parameter */
+<mark>int square( int y )</mark> /* y is a copy of argument to function */
+<mark>{</mark>
+   <mark>return y * y;</mark> /* returns square of y as an int */
+
+<mark>}</mark> /* end function square */
+
+</code>
+</pre>
+<script src="zoom.js"></script>
+<script>
+document.querySelector( '#prog0503').addEventListener( 'click', function( event ) {
+event.preventDefault();zoom.to({ element: event.target });} );
+</script> 
+</div>
+<!-- end code slide -->

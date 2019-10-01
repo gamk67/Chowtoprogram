@@ -1,0 +1,39 @@
+<!-- Slide 292 -->
+<div class="slide normal" id="slide292">
+   <header>
+      <h1>Searching Arrays</h1>
+   </header>
+   <!--
+      <style>
+       #slide292 { }
+      </style>
+      -->
+   <section>
+      <div>
+         <ul>
+            <li>
+               Binary search             
+            </li>
+            <li>
+               For sorted arrays only            
+            </li>
+            <li>
+               Compares the <tt>middle</tt> element with the <tt>key</tt>
+               <ul>
+                  <li class="outlineTitle9outline2">If they are equal, a match has been found</li>
+                  <li class="outlineTitle9outline2">If <tt>key &lt; middle</tt>, it looks in the first half of the array</li>
+                  <li class="outlineTitle9outline2">If <tt>key &gt; middle</tt>, it looks in the last half</li>
+                  <li class="outlineTitle9outline2">Repeat</li>
+               </ul>
+            </li>
+            <li>
+               Very fast; at most n steps are required, where <br> 2<sup>n</sup> &gt; number of elements
+               <ul>
+                  <li class="outlineTitle9outline2">A 30 element array takes at most 5 steps (<b>2</b><b><sup>5</sup></b><b> &gt; 30)</b></li>
+               </ul>
+            </li>
+         </ul>
+      </div>
+   </section>
+</div>
+<!-- endSlide 292 -->

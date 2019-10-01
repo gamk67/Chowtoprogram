@@ -1,0 +1,32 @@
+<!-- Slide 060 -->
+        <div class="slide normal" id="slide060">
+            
+            <header>
+               <h1>Evaluation order: example</h1>
+             </header>
+             
+             <style>
+              #slide060 div p {font-size: 18pt; }
+             </style>
+             
+             
+             <section>
+
+ <div>
+          <p>Step 1.  y = 2 * 5 * 5 + 3 * 5 + 7;  /* leftmost multiplication */</p>
+          <b> 2 * 5 is 10</b>
+          <p>Step 2.  y = 10 * 5 + 3 * 5 + 7;  /* leftmost multiplication */</p>
+          <b> 10 * 5 is 50</b>
+          <p>Step 3.  y = 50 + 3 * 5 + 7;  /* multiplication first */</p>
+          <b> 3 * 5 is 15</b>
+          <p>Step 4.  y = 50 + 15 + 7;  /* leftmost addition */</p>
+          <b> 50 + 15 is 65</b>
+          <p>Step 5.  y = 65 + 7;  /* last addition */</p>
+          <p>Step 6.  y = 72;</p>
+</div>
+        </section>
+      </div>
+
+<!-- endSlide 60 -->
+
+

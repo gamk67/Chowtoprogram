@@ -1,0 +1,35 @@
+<!-- code slide (embedded) -->
+<div class="deitel" id="prog0409">
+<style>
+#prog0409 {
+  font-size: 16pt; font-weight: bold; font-weight: bold;
+}
+</style>
+<pre style="background-color:#F5FADC">
+<code>
+/* Fig. 4.9: fig04_09.c
+   Using the do/while repetition statement */
+#include &lt;stdio.h&gt;
+
+/* function main begins program execution */
+int main( void )
+{
+   int counter = 1;              /* initialize counter */
+   
+   <mark>do {</mark>
+      printf( "%d  ", counter ); /* display counter */
+   <mark>} while ( ++counter &lt;= 10 );</mark> /* end do...while */
+
+   return 0; /* indicate program ended successfully */
+
+} /* end function main */
+
+</code>
+</pre>
+<script src="zoom.js"></script>
+<script>
+document.querySelector( '#prog0409').addEventListener( 'click', function( event ) {
+event.preventDefault();zoom.to({ element: event.target });} );
+</script> 
+</div>
+<!-- end code slide -->

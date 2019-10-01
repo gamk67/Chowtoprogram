@@ -1,0 +1,32 @@
+<!-- Slide 198 -->
+        <div class="slide normal" id="slide198">
+            
+            <header>
+                         <h1><span xml:lang="zxx" lang="zxx">Confusing Equality (</span><span xml:lang="zxx" lang="zxx"><tt>==</tt></span><span xml:lang="zxx" lang="zxx">) and</span><span xml:lang="zxx" lang="zxx"></span><span xml:lang="zxx" lang="zxx">Assignment (</span><span xml:lang="zxx" lang="zxx"><tt>=</tt></span><span xml:lang="zxx" lang="zxx">) Operators</span></h1>
+             </header>
+             <!--
+             <style>
+              slide198 { }
+             </style>
+             -->
+             
+             <section>
+
+ <div>
+          <ul>
+            <li><ul><li class="outlineTitle9outline2"><ul><li class="outlineTitle9outline3">Example, replacing <tt>==</tt> with <tt>=</tt>:</li></ul></li></ul></li>
+          </ul>
+          <p dir="ltr"><b><tt>if ( payCode = 4 )</tt></b></p>
+          <p dir="ltr"><b><tt> </tt></b><b><tt>printf( "You get a bonus!\n" );</tt></b></p>
+          <p dir="ltr">This sets<b> </b><b><tt>payCode</tt></b><b> </b>to 4</p>
+          <p dir="ltr">4 is nonzero, so expression is true, and bonus awarded no matter what the <b><tt>payCode</tt></b> was</p>
+          <ul>
+            <li><ul><li class="outlineTitle9outline2">Logic error, not a syntax error</li><li class="outlineTitle9outline2">Suggestion: write the condition the other way round<span></span>  <b><tt>if ( 4 == payCode )</tt></b><tt> .....</tt><tt></tt>This is correct, but<span></span>  <b><tt>if ( 4 = payCode )</tt></b> .....<span></span>is a syntax error, so it won't compile!</li></ul></li>
+          </ul>
+        </div>
+        </section>
+      </div>
+
+<!-- endSlide 198 -->
+
+

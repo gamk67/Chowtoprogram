@@ -1,0 +1,40 @@
+<!-- Slide 088 -->
+<div class="slide normal" id="slide088">
+   <header>
+      <h1>The <tt>if…else</tt> selection statement</h1>
+   </header>
+   
+      <style>
+       #slide088 code {font-size: 16pt }
+      </style>
+     
+   <section>
+      <div>
+<ul>         
+       <li>C code:<br>
+         <code>
+         <b><tt>if ( grade &gt;= 60 )</tt></b>
+         <br>&nbsp;&nbsp;&nbsp;&nbsp;
+         <b><tt> </tt></b><b><tt>printf( "Passed\n");</tt></b>
+         <br>
+         <b><tt>else</tt></b>
+         <br>&nbsp;&nbsp;&nbsp;&nbsp;
+         <b><tt> </tt></b><b><tt>printf( "Failed\n");</tt></b><tt> </tt>
+         </code>
+       </li>
+<li>
+           Ternary conditional operator (<tt>? :</tt>&nbsp;)
+           Takes three arguments (condition, value if <b><tt>true</tt></b>, value if <b><tt>false</tt></b>).
+</li>
+<li>
+           Our C code could be written as:<br>
+                     
+         <code><b><tt>printf( "%s\n", grade &gt;= 60 ? "Passed" : "Failed" ); </tt></b></code>
+             <br>or<br>
+         <code><b><tt>grade &gt;= 60 ? printf( “Passed\n” ) : printf( “Failed\n” );</tt></b></code>
+</li>
+</ul>
+      </div>
+   </section>
+</div>
+<!-- endSlide 88 -->

@@ -1,0 +1,46 @@
+<!-- code slide (embedded) -->
+<div class="deitel" id="prog0605">
+<style>
+#prog0605 {
+  font-size: 16pt; font-weight: bold; font-weight: bold;
+}
+</style>
+<pre style="background-color:#F5FADC">
+<code>
+/* Fig. 6.5: fig06_05.c
+   Initialize the elements of array s to
+   the even integers from 2 to 20 */
+#include &lt;stdio.h&gt;
+<mark>#define SIZE 10</mark>
+
+/* function main begins program execution */
+int main( void )
+{   
+   /* symbolic constant SIZE can be used to specify array size */
+   <mark>int s[ SIZE ];</mark> /* array s has 10 elements */
+   int j; /* counter */
+
+   <mark>for ( j = 0; j < SIZE; j++ ) {</mark> /* set the values */
+      <mark>s[ j ] = 2 + 2 * j;</mark>
+   <mark>}</mark> /* end for */
+
+   printf( "%s%13s\n", "Element", "Value" );
+
+   /* output contents of array s in tabular format */
+   for ( j = 0; j < SIZE; j++ ) {   
+      printf( "%7d%13d\n", j, s[ j ] );
+   } /* end for */
+
+   return 0; /* indicates successful termination */
+
+} /* end main */
+
+</code>
+</pre>
+<script src="zoom.js"></script>
+<script>
+document.querySelector( '#prog0605').addEventListener( 'click', function( event ) {
+event.preventDefault();zoom.to({ element: event.target });} );
+</script> 
+</div>
+<!-- end code slide -->

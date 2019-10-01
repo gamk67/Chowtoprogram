@@ -1,0 +1,45 @@
+<!-- Slide 335 -->
+<div class="slide normal" id="slide335">
+   <header>
+      <h1>Random Number Generation</h1>
+   </header>
+   <!--
+      <style>
+       #slide335 { }
+      </style>
+      -->
+   <section>
+      <div>
+         <ul>
+            <li>
+               <b><tt>rand</tt></b> function
+               <ul>
+                  <li class="outlineTitle9outline2">Load <b><tt>&lt;stdlib.h&gt;</tt></b></li>
+                  <li class="outlineTitle9outline2">Returns a "random" number between <tt>0</tt> and <tt>RAND_MAX</tt> (at least <tt>32767</tt>)
+                  </li>
+               </ul>
+            </li>
+         <b><tt>&nbsp;&nbsp;i = rand();</tt></b>
+
+                  <li>
+                     Pseudo random
+                     <ul>
+                        <li class="outlineTitle9outline3">Generates a preset sequence of "random" numbers</li>
+                        <li class="outlineTitle9outline3">Generates the same sequence for every function call</li>
+                     </ul>
+                  </li>
+
+            <li>
+               Scaling
+               <ul>
+                  <li class="outlineTitle9outline2"><b><tt>rand() % n</tt></b> returns a number between <tt>0</tt> and <tt>n - 1</tt></li>
+                  <li class="outlineTitle9outline2">Add <tt>1</tt> to make a random number between <tt>1</tt> and <tt>n</tt>
+                      <br><b><tt>1 + ( rand() % 6)</tt></b> is a random number between 1 and 6
+                  </li>
+               </ul>
+            </li>
+         </ul>
+      </div>
+   </section>
+</div>
+<!-- endSlide 335 -->

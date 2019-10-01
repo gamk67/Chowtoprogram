@@ -1,0 +1,21 @@
+#!/bin/bash
+
+EXPECTED_ARGS=2
+E_BADARGS=65
+
+if [ $# -ne $EXPECTED_ARGS ]
+then
+  echo "Usage: `basename $0` slideno figno"
+  exit $E_BADARGS
+fi
+
+SLIDE=$1
+FIG=$2
+
+#echo $SLIDE $FIG
+
+cat codeslide.html \
+    | sed "s/___/$SLIDE/" \
+    | sed "s/\@\@\@/$FIG/" \
+    > ../tmp/f$SLIDE.html
+

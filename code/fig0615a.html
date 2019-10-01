@@ -1,0 +1,45 @@
+<!-- code slide (embedded) -->
+<div class="deitel" id="prog0615a">
+<style>
+#prog0615a {
+  font-size: 16pt; font-weight: bold; font-weight: bold;
+}
+</style>
+<pre style="background-color:#F5FADC">
+<code>
+   /* bubble sort */
+   /* loop to control number of passes */
+   for ( pass = 1; pass < SIZE; pass++ ) { 
+      <mark>changed = 0;</mark>
+      /* loop to control number of comparisons per pass */
+      for ( i = 0; <mark>i < SIZE - pass;</mark> i++ ) {      
+
+         /* compare adjacent elements and swap them if first 
+         element is greater than second element */
+         if ( a[ i ] > a[ i + 1 ] ) {  
+            hold = a[ i ];                   
+            a[ i ] = a[ i + 1 ];
+            a[ i + 1 ] = hold;
+            <mark>changed = 1;</mark>
+         } /* end if */
+
+      } /* end inner for */
+      <mark>if (!changed) break;</mark>
+   } /* end outer for */
+
+   printf( "\nData items in ascending order\n" );
+
+   /* output sorted array */
+   for ( i = 0; i < SIZE; i++ ) {
+      printf( "%4d", a[ i ] );
+   } /* end for */
+
+</code>
+</pre>
+<script src="zoom.js"></script>
+<script>
+document.querySelector( '#prog0615a').addEventListener( 'click', function( event ) {
+event.preventDefault();zoom.to({ element: event.target });} );
+</script> 
+</div>
+<!-- end code slide -->

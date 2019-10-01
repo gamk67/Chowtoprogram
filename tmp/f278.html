@@ -1,0 +1,39 @@
+<!-- Slide 278 -->
+<div class="slide normal" id="slide278">
+   <header>
+      <h1>Character arrays</h1>
+   </header>
+   <!--
+      <style>
+       #slide278 { }
+      </style>
+      -->
+   <section>
+      <div>
+         <ul>
+                  <li class="outlineTitle9outline2">String <tt>“first”</tt> is really a array of characters</li>
+                  <li class="outlineTitle9outline2">Character arrays can be initialized using string literals
+                       <br><b><tt>&nbsp;&nbsp;&nbsp;char string1[] = "first";</tt></b>
+                  </li>
+
+                  <li class="outlineTitle9outline3">The <i>null character</i> <tt>'\0'</tt> terminates a string</li>
+                  <li class="outlineTitle9outline3"><tt>string1</tt> actually has 6 elements. It is equivalent to
+                         <br><b><tt>&nbsp;&nbsp;&nbsp;char string1[] = { 'f', 'i', 'r', 's', 't', '\0' };</tt></b>
+                  </li>
+
+                  <li class="outlineTitle9outline2">You can access individual characters:
+                     <br><b><tt>&nbsp;&nbsp;&nbsp;string1[ 3 ]</tt></b> is character ‘s’
+                  </li>
+
+                 <li class="outlineTitle9outline2">The array name is the memory address of the array, so &amp; is not needed for scanf:
+                      <br><b><tt>&nbsp;&nbsp;&nbsp;scanf( "%s", string2 );</tt></b>
+                     <ul>
+                        <li class="outlineTitle9outline3">this reads characters until a whitespace is encountered</li>
+                        <li class="outlineTitle9outline3">Be careful not to write past end of the array, as it is possible to do so</li>
+                     </ul>
+                 </li>
+     </ul>
+      </div>
+   </section>
+</div>
+<!-- endSlide 278 -->

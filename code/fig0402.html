@@ -1,0 +1,37 @@
+<!-- code slide (embedded) -->
+<div class="deitel" id="prog0402">
+<style>
+#prog0402 {
+  font-size: 16pt; font-weight: bold; font-weight: bold;
+}
+</style>
+<pre style="background-color:#F5FADC">
+<code>
+/* Fig. 4.2: fig04_02.c
+   Counter-controlled repetition with the for statement */
+#include &lt;stdio.h&gt;
+
+/* function main begins program execution */
+int main( void )
+{
+   int counter; /* define counter */
+
+   /* initialization, repetition condition, and increment 
+      are all included in the for statement header. */
+   <mark>for ( counter = 1; counter <= 10; counter++ ) {</mark>
+      printf( "%d\n", counter );
+   <mark>} /* end for */</mark>
+
+   return 0; /* indicate program ended successfully */
+
+} /* end function main */
+
+</code>
+</pre>
+<script src="zoom.js"></script>
+<script>
+document.querySelector( '#prog0402').addEventListener( 'click', function( event ) {
+event.preventDefault();zoom.to({ element: event.target });} );
+</script> 
+</div>
+<!-- end code slide -->

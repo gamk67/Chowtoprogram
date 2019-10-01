@@ -1,0 +1,44 @@
+<!-- code slide (embedded) -->
+<div class="deitel" id="prog0603">
+<style>
+#prog0603 {
+  font-size: 16pt; font-weight: bold; font-weight: bold;
+}
+</style>
+<pre style="background-color:#F5FADC">
+<code>
+/* Fig. 6.3: fig06_03.c
+   initializing an array */
+#include &lt;stdio.h&gt;
+
+/* function main begins program execution */
+int main( void )
+{
+   <mark>int n[ 10 ];</mark> /* n is an array of 10 integers */
+   int i; /* counter */
+   
+   /* initialize elements of array n to 0 */
+   <mark>for ( i = 0; i < 10; i++ ) {</mark>
+      <mark>n[ i ] = 0;</mark> /* set element at location i to 0 */
+   <mark>}</mark> /* end for */
+   
+   printf( "%s%13s\n", "Element", "Value" );
+
+   /* output contents of array n in tabular format */
+   <mark>for ( i = 0; i < 10; i++ ) {</mark>
+      <mark>printf( "%7d%13d\n", i, n[ i ] );</mark>
+   <mark>}</mark> /* end for */
+
+   return 0; /* indicates successful termination */
+
+} /* end main */
+
+</code>
+</pre>
+<script src="zoom.js"></script>
+<script>
+document.querySelector( '#prog0603').addEventListener( 'click', function( event ) {
+event.preventDefault();zoom.to({ element: event.target });} );
+</script> 
+</div>
+<!-- end code slide -->

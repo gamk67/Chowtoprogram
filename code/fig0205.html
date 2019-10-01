@@ -1,0 +1,43 @@
+<!-- code slide (embedded) -->
+<div class="deitel" id="prog0205">
+<style>
+#prog0205 {
+  font-size: 16pt; font-weight: bold; font-weight: bold;
+}
+</style>
+<pre style="background-color:#F5FADC">
+<code>
+/* Fig. 2.5: fig02_05.c
+   Addition program */
+#include &lt;stdio.h&gt;
+
+/* function main begins program execution */
+int main( void )
+{
+   <mark>int integer1;</mark> /* first number to be input by user  */
+   <mark>int integer2;</mark> /* second number to be input by user */
+   <mark>int sum;</mark>      /* variable in which sum will be stored */ 
+
+   printf( "Enter first integer\n" ); /* prompt */
+   <mark>scanf( "%d", &integer1 );</mark>          /* read an integer */
+
+   printf( "Enter second integer\n" ); /* prompt */
+   <mark>scanf( "%d", &integer2 );</mark>           /* read an integer */
+
+   <mark>sum = integer1 + integer2;</mark> /* assign total to sum */
+
+   <mark>printf( "Sum is %d\n", sum );</mark> /* print sum */
+
+   return 0; /* indicate that program ended successfully */
+
+} /* end function main */
+
+</code>
+</pre>
+<script src="zoom.js"></script>
+<script>
+document.querySelector( '#prog0205').addEventListener( 'click', function( event ) {
+event.preventDefault();zoom.to({ element: event.target });} );
+</script> 
+</div>
+<!-- end code slide -->

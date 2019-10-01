@@ -1,0 +1,14 @@
+.framestandard {
+  display: block;
+  margin-left: auto;
+  margin-right:auto;
+  margin-top: 30px;
+}
+
+.advice p {
+  font-size: 28pt;
+}
+
+.code header {
+  font-size: 24pt;
+}

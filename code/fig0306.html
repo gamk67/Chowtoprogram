@@ -1,0 +1,51 @@
+<!-- code slide (embedded) -->
+<div class="deitel" id="prog0306">
+<style>
+#prog0306 {
+  font-size: 16pt; font-weight: bold; font-weight: bold;
+}
+</style>
+<pre style="background-color:#F5FADC">
+<code>
+/* Fig. 3.6: fig03_06.c
+   Class average program with counter-controlled repetition */
+#include &lt;stdio.h&gt;
+
+/* function main begins program execution */
+int main( void )
+{
+   <mark>int counter;</mark> /* number of grade to be entered next */
+   int grade;   /* grade value */
+   int total;   /* sum of grades input by user */
+   int average; /* average of grades */
+   
+   /* initialization phase */
+   total = 0;   /* initialize total */
+   <mark>counter = 1;</mark> /* initialize loop counter */
+   
+   /* processing phase */
+   <mark>while ( counter <= 10 ) {</mark>     /* loop 10 times */
+      printf( "Enter grade: " ); /* prompt for input */
+      scanf( "%d", &grade );     /* read grade from user */
+      total = total + grade;     /* add grade to total */
+      <mark>counter = counter + 1;</mark>     /* increment counter */
+   <mark>}</mark> /* end while */
+   
+   /* termination phase */
+   <mark>average = total / 10;</mark> /* integer division */
+
+   printf( "Class average is %d\n", average ); /* display result */
+
+   return 0; /* indicate program ended successfully */
+
+} /* end function main */
+
+</code>
+</pre>
+<script src="zoom.js"></script>
+<script>
+document.querySelector( '#prog0306').addEventListener( 'click', function( event ) {
+event.preventDefault();zoom.to({ element: event.target });} );
+</script> 
+</div>
+<!-- end code slide -->

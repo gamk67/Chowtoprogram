@@ -1,0 +1,35 @@
+<!-- code slide (embedded) -->
+<div class="deitel" id="prog039123">
+<style>
+#prog039123 {
+  font-size: 16pt; font-weight: bold; font-weight: bold;
+}
+</style>
+<pre style="background-color:#F5FADC">
+<code>
+/* Example of float print width specification */
+#include &lt;stdio.h&gt;
+
+int main( void )
+{
+
+    <mark>float f = 10.0 / 7.0;</mark>
+
+    <mark>printf( "%f\n", f );</mark>
+    <mark>printf( "%20f\n", f );</mark>
+    <mark>printf( "%.2f\n", f );</mark>
+    <mark>printf( "%20.2f\n", f );</mark>
+
+    return 0; /* program ended successfully */
+
+} /* end function main */
+
+</code>
+</pre>
+<script src="zoom.js"></script>
+<script>
+document.querySelector( '#prog039123').addEventListener( 'click', function( event ) {
+event.preventDefault();zoom.to({ element: event.target });} );
+</script> 
+</div>
+<!-- end code slide -->

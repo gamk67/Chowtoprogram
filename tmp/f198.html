@@ -1,0 +1,37 @@
+<!-- Slide 198 -->
+<div class="slide normal" id="slide198">
+   <header>
+      <h1>Confusing Equality and Assignment</h1>
+   </header>
+   <!--
+      <style>
+       #slide198 { }
+      </style>
+      -->
+   <section>
+      <div>
+         <ul>  
+             <li> Example, replacing <tt>==</tt> with <tt>=</tt>:
+                     
+                 <br><b><tt>&nbsp;&nbsp;&nbsp;if ( payCode = 4 )</tt></b>
+                 <br><b><tt> </tt></b><b><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;printf( "You get a bonus!\n" );</tt></b>
+              <ul>
+                 <li class="outlineTitle9outline2">This sets <b><tt>payCode</tt></b> to 4</li>
+                 <li class="outlineTitle9outline2">4 is nonzero, so the expression is true, and a bonus is awarded no matter what the <b><tt>payCode</tt></b> was</li>
+              </ul>
+             </li>
+         
+            <li>This is a logic error, not a syntax error</li>
+            <li>Suggestion: write the condition the other way round
+                    <br><b><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if ( 4 == payCode )</tt></b><tt> .....</tt>
+                    <br>This is correct, but
+                    <br><b><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if ( 4 = payCode )</tt></b> .....
+                    <br>is a syntax error, so it won't compile!</li>
+               
+            </li>
+         </ul>
+
+      </div>
+   </section>
+</div>
+<!-- endSlide 198 -->

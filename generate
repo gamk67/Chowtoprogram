@@ -1,0 +1,11 @@
+# generate the full presentation, in "presentation.html"
+
+cat head.html             > presentation.html
+cat first.html           >> presentation.html
+
+for i in tmp/f???*.html
+do
+  cat $i                 >> presentation.html
+done
+
+cat tail.html            >> presentation.html

@@ -1,0 +1,55 @@
+<!-- Slide 147 -->
+        <div class="slide" id="slide147">
+                       
+             <style>
+              #slide147 {font-size:12pt; }
+              #slide147 pre {background:none; border:0px;font-size:14pt;}
+             </style>
+             
+             
+        
+          <p><b>&nbsp;&nbsp;&nbsp;Original:</b></p>
+        
+ <pre>
+ <code>
+  while ( grade != -1 ) {
+     total = total + grade;
+     counter = counter + 1;
+     /* get next grade from user */
+     printf( "Enter grade, -1 to end: " );
+     scanf("%d", &amp;grade);
+  } /* end while */
+</code>
+</pre>
+        
+          <p><b>&nbsp;&nbsp;&nbsp;This becomes:</b></p>
+        
+<pre>
+<code>
+  <mark>printf(“Entering while loop\n”);</mark>
+  while ( grade != -1 ) {
+     <mark>printf(“start while, grade=%d\n”, grade);</mark>
+     total = total + grade;
+     counter = counter + 1;
+     <mark>printf(“total=%d, count=%d\n”, total, count);</mark>
+     /* get next grade from user */
+     printf( "Enter grade, -1 to end: " );
+     scanf("%d", &amp;grade);
+  } /* end while */
+  <mark>printf(“Exit while loop\n”);</mark>
+</code>
+</pre>
+
+           <aside class="note">
+            <section>
+The added <mark>printf</mark> statements print the values of the important variables as the loop progresses. We also print when we enter and exit the loop.
+If we never exit the loop, we must be going round inside the loop endlessly, so there has to be a problem with the loop control (which is a very typical
+problem).
+            </section>
+          </aside> 
+       
+      </div>
+
+<!-- endSlide 147 -->
+
+

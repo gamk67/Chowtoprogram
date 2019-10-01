@@ -1,0 +1,63 @@
+<!-- code slide (embedded) -->
+<div class="deitel" id="prog0615b">
+<style>
+#prog0615b {
+  font-size: 16pt; font-weight: bold; font-weight: bold;
+}
+</style>
+<pre style="background-color:#F5FADC">
+<code>
+/* Fig. 6.15a: fig06_15a.c
+    This program sorts an array's values using insertion sort */
+#include &lt;stdio.h&gt;
+#define SIZE 10
+ 
+/* function main begins program execution */
+int main( void ) 
+{   
+   /* initialize a */
+   int A[ SIZE ] = { 2, 6, 4, 8, 10, 12, 89, 68, 45, 37 }; 
+   int pass; /* passes counter */
+   int i,j,key,size;
+   int hold; /* temporary location used to swap array elements */
+   
+   printf( "Data items in original order\n" );
+   
+   /* output original array */
+   for ( i = 0; i < SIZE; i++ ) {
+      printf( "%4d", A[ i ] );
+   } /* end for */
+
+   <mark>/* insertion sort loop */</mark>
+   <mark>for (i = 1; i < SIZE; i++) {</mark> 
+      key = A[i];
+      j = i;
+      while((j > 0) && (key < A[j-1])) {
+	A[j]=A[j-1];
+	j = j-1;
+      } 
+        A[j] = key;
+   <mark>}</mark> 
+
+   printf( "\nData items in ascending order\n" );
+ 
+   /* output sorted array */
+   for ( i = 0; i < SIZE; i++ ) {
+      printf( "%4d", A[ i ] );
+   } /* end for */
+ 
+   printf( "\n" );
+
+   return 0; /* indicates successful termination */
+
+} /* end main */
+
+</code>
+</pre>
+<script src="zoom.js"></script>
+<script>
+document.querySelector( '#prog0615b').addEventListener( 'click', function( event ) {
+event.preventDefault();zoom.to({ element: event.target });} );
+</script> 
+</div>
+<!-- end code slide -->

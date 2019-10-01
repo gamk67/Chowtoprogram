@@ -1,0 +1,38 @@
+<!-- code slide (embedded) -->
+<div class="deitel" id="prog0405">
+<style>
+#prog0405 {
+  font-size: 16pt; font-weight: bold; font-weight: bold;
+}
+</style>
+<pre style="background-color:#F5FADC">
+<code>
+/* Fig. 4.5: fig04_05.c  
+   Summation with for */
+#include &lt;stdio.h&gt;
+
+/* function main begins program execution */
+int main( void )
+{
+   int sum = 0; /* initialize sum */
+   <mark>int number;</mark>  /* number to be added to sum */
+
+   <mark>for ( number = 2; number <= 100; number += 2 ) {</mark>
+      <mark>sum += number;</mark> /* add number to sum */      
+   <mark>} /* end for */</mark>
+
+   printf( "Sum is %d\n", sum ); /* output sum */
+
+   return 0; /* indicate program ended successfully */
+
+} /* end function main */
+
+</code>
+</pre>
+<script src="zoom.js"></script>
+<script>
+document.querySelector( '#prog0405').addEventListener( 'click', function( event ) {
+event.preventDefault();zoom.to({ element: event.target });} );
+</script> 
+</div>
+<!-- end code slide -->

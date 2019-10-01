@@ -1,0 +1,44 @@
+<!-- code slide (embedded) -->
+<div class="deitel" id="prog0411">
+<style>
+#prog0411 {
+  font-size: 16pt; font-weight: bold; font-weight: bold;
+}
+</style>
+<pre style="background-color:#F5FADC">
+<code>
+/* Fig. 4.11: fig04_11.c
+   Using the break statement in a for statement */
+#include &lt;stdio.h&gt;
+
+/* function main begins program execution */
+int main( void )
+{
+   int x; /* counter */
+   
+   /* loop 10 times */
+   for ( x = 1; x <= 10; x++ ) {
+
+      /* if x is 5, terminate loop */
+      if ( x == 5 ) {
+         <mark>break;</mark> /* break loop only if x is 5 */
+      } /* end if */
+
+      printf( "%d ", x ); /* display value of x */
+   } /* end for */
+   
+   printf( "\nBroke out of loop at x == %d\n", x );
+   
+   return 0; /* indicate program ended successfully */
+
+} /* end function main */
+
+</code>
+</pre>
+<script src="zoom.js"></script>
+<script>
+document.querySelector( '#prog0411').addEventListener( 'click', function( event ) {
+event.preventDefault();zoom.to({ element: event.target });} );
+</script> 
+</div>
+<!-- end code slide -->

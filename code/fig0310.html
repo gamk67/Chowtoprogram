@@ -1,0 +1,62 @@
+<!-- code slide (embedded) -->
+<div class="deitel" id="prog0310">
+<style>
+#prog0310 {
+  font-size: 16pt; font-weight: bold; font-weight: bold;
+}
+</style>
+<pre style="background-color:#F5FADC">
+<code>
+/* Fig. 3.10: fig03_10.c
+   Analysis of examination results */
+#include &lt;stdio.h&gt;
+
+/* function main begins program execution */
+int main( void )
+{
+   /* initialize variables in definitions */
+   int passes = 0;   /* number of passes */
+   int failures = 0; /* number of failures */
+   int student = 1;  /* student counter */
+   int result;       /* one exam result */
+
+   /* process 10 students using counter-controlled loop */
+   <mark>while ( student <= 10 ) {</mark>
+
+      /* prompt user for input and obtain value from user */
+      printf( "Enter result ( 1=pass,2=fail ): " );
+      scanf( "%d", &result );
+
+      /* if result 1, increment passes */
+      <mark>if ( result == 1 ) {</mark>     
+         passes = passes + 1;
+      <mark>}</mark> /* end if */
+      <mark>else {</mark> /* otherwise, increment failures */
+         failures = failures + 1;
+      <mark>}</mark> /* end else */
+
+      student = student + 1; /* increment student counter */ 
+   } /* end while */
+
+   /* termination phase; display number of passes and failures */
+   printf( "Passed %d\n", passes );
+   printf( "Failed %d\n", failures );
+
+   /* if more than eight students passed, print "raise tuition" */
+   if ( passes > 8 ) {
+      printf( "Raise tuition\n" );
+   } /* end if */
+
+   return 0; /* indicate program ended successfully */
+
+} /* end function main */
+
+</code>
+</pre>
+<script src="zoom.js"></script>
+<script>
+document.querySelector( '#prog0310').addEventListener( 'click', function( event ) {
+event.preventDefault();zoom.to({ element: event.target });} );
+</script> 
+</div>
+<!-- end code slide -->
